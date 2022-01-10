@@ -1,0 +1,603 @@
+@import url(./variables.scss);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 500;
+    color: #393939;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 500;
+    color: #111113;
+    text-transform: uppercase;
+}
+
+.footer-title {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #111113;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.basic-text-style {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.second-text-style {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: #111113;
+    font-size: 11px;
+    line-height: 160%;
+    cursor: pointer;
+}
+
+.basic-button {
+    width: 156px;
+    height: 56px;
+    background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.wear-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.wear-text {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #929292;
+}
+
+.shop-subtitle {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.gift-title {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #111113;
+    text-transform: uppercase;
+}
+
+.gift-subtitle {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.gift-text {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #111113;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+
+    .first-header-wrapper {
+        background-color: #111113;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 37px;
+        width: auto;
+
+        p {
+            cursor: pointer;
+        }
+
+        .currency {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .arrow-down {
+                margin-left: 5px;
+                margin-right: 25px;
+                margin-bottom: 5px;
+
+                img {
+                cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .second-header-wrapper {
+        display: inline-flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(242, 242, 242, 1);
+
+        .logo-wrapper {
+            border-right: 1px solid rgba(242, 242, 242, 1);
+            padding: 17px 50px;
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            padding: 0 98px;
+        }
+
+        .menu-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .menu-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                border-left: 1px solid rgba(242, 242, 242, 1);
+                padding: 0 30px;
+
+                img {
+                cursor: pointer;
+                }
+
+                .circle {
+                position: absolute;
+                top: 35px;
+                left: 42px;
+                }
+            }
+        }
+    }
+}
+
+.main-container {
+    background-image: url(../assets/img/Main_1080.png);
+    width: 1392px;
+    height: 648px;
+    margin: 24px auto;
+
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        padding-left: 107px;
+        padding-top: 126px;
+
+        .sub-title-text {
+            font-size: 16px;
+            line-height: 24px;
+            color: #666666;
+            font-weight: 400;
+        }
+
+        .button-wrapper {
+            display: inline-flex;
+            gap: 20px;
+
+            .reverse-button {
+                color: #393939;
+                background-color: transparent;
+                border: 1px solid #111113;
+            }
+        }
+    }
+}
+
+.slider-bg {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 46px;
+
+    .slider-item {
+        width: 40px;
+        height: 2px;
+        background-color: #EAEAEB;
+
+        &.active {
+        background-color: #393939;
+        }
+    }
+}
+
+.trending-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-top: 65px;
+
+    .trending-title {
+        text-align: center;
+    }
+
+    .trending-menu {
+        display: flex;
+        gap: 33px;
+
+        .select {
+            width: 30px;
+            border-bottom: 1px solid #000000;
+        }
+    }
+}
+
+.product-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 48px;
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.shop-container {
+    margin-top: 118px;
+    display: flex;
+    flex-direction: column;
+
+    .shop-wrapper {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+
+        .bra-wrapper {
+            background-image: url(../assets/img/Bra.png);
+            width: 720px;
+            height: 720px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 68px;
+
+            .underline {
+                width: 56px;
+                border-bottom: 1px solid #FFFFFF;
+                cursor: pointer;
+            }
+        }
+
+        .body-wrapper {
+            background-image: url(../assets/img/Body.png);
+            width: 720px;
+            height: 720px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 68px;
+
+            .underline {
+                width: 65px;
+                border-bottom: 1px solid #FFFFFF;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .nightwear-wrapper {
+        background-image: url(../assets/img/Nightwear.png);
+        width: 1440px;
+        height: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 250px;
+        margin: 0 auto;
+
+        .nightwear-container {
+                display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 68px;
+
+            .underline {
+                width: 105px;
+                border-bottom: 1px solid #FFFFFF;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.underwear-container {
+    margin-top: 108px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    align-items: center;
+
+    .underwear-title {
+        margin-right: 820px;
+    }
+
+        .underwear-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+
+        .underwear-item {
+            .wear-text {
+                &::after {
+                content: '69,00€';
+                margin-left: 5px;
+                text-decoration: none;
+                color: #BD3735;
+                }
+            }
+        }
+    }
+}
+
+.wrong-wrapper {
+    background-image: url(../assets/img/Wrong_bra.png);
+    width: 1440px;
+    height: 733px;
+    margin-top: 148px;
+    margin: 148px auto 0 auto;
+}
+
+.gift {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .gift-container {
+        margin-top: 93px;
+    
+        .gift-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 112px;
+    
+            .gift-box {
+                display: flex;
+                gap: 41px;
+
+                .gift-description {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+    
+                    .gift-title {
+                    margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .almerna-img {
+        margin-top: 122px;
+    }
+
+    .almerna-title {
+        margin-top: 48px;
+
+        .almerna-title-style {
+            color: #000000;
+        }
+    }
+}
+
+.wear-container {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+
+    .wear-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 37px;
+    }
+
+    .slider-wrapper {
+        margin-top: 85px;
+        display: flex;
+        justify-content: center;
+
+        .slider-item-active {
+            border-bottom: 2px solid #000000;
+        }
+    }
+}
+
+.img-container {
+    margin-top: 169px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    .img-container-title{
+        .img-container-title-style {
+            color: #000000;
+        }
+    }
+
+    .img-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        .woman-wrapper {
+            background-image: url(../assets/img/Good_2.png);
+            width: 467px;
+            height: 468px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.footer {
+    margin-top: 110px;
+
+    .first-footer-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 110px;
+        border-bottom: 1px solid rgba(242, 242, 242, 1);
+        padding: 0 100px;
+        padding-bottom: 45px;
+
+        .footer-logo {
+            cursor: pointer;
+        }
+    }
+
+    .footer-main-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .footer-title {
+            margin-bottom: 6px;
+            cursor: pointer;
+        }
+
+        .footer-text {
+            cursor: pointer;
+        }
+    }
+
+    .join-wrapper {
+        .join-input-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 392px;
+            height: 56px;
+            border: 1px solid rgba(229, 229, 229, 1);
+
+            .basic-input {
+                height: 36px;
+                width: 334px;
+                font-family: "Lato", sans-serif;
+                color: rgba(178, 178, 178, 1);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                border: none;
+            }
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .footer-text {
+            font-size: 12px;
+
+            u {
+                color: rgba(153, 153, 153, 1);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.second-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin: 24px 0 63px 0;
+
+    .footer-text {
+        color: rgba(153, 153, 153, 1);
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+    .policy-social-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+
+        .policy-wrapper {
+            display: flex;
+            gap: 40px;
+        }
+
+        .social-wrapper {
+            display: flex;
+            gap: 12px;
+
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+}
