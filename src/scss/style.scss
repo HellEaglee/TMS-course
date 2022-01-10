@@ -280,6 +280,10 @@ h3 {
         display: flex;
         gap: 33px;
 
+        .second-text-style {
+            text-transform: uppercase;
+        }
+        
         .select {
             width: 30px;
             border-bottom: 1px solid #000000;
